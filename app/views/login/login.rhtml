@@ -1,0 +1,13 @@
+<!--[form:login]-->
+<%= form_tag :action => "login", :id => @login %>
+
+<p>
+<label for="login_username">Username</label>
+<%= text_field 'login', 'username'  %>
+<label for="login_password">Password</label>
+<%= text_field 'login', 'password'  %>
+<%= submit_tag "Logar" %>
+</p>
+
+<!--[eoform:login]-->
+</p>

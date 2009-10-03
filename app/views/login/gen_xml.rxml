@@ -1,0 +1,7 @@
+raise "missing object @xml" if @xml.nil?
+raise "missing object $objLogin" if $objLogin.nil?
+@xml.instruct! :xml, :version=>"1.0" 
+@xml.login do
+  @xml.nome($objLogin.username)
+  @xml.senha($objLogin.password)
+end
